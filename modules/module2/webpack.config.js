@@ -23,11 +23,12 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "shell",
-      library: { type: "var", name: "shell" },
-      remotes: {
-        module1: "module1", // Add remote (Second project)
-        module2: "module2",
+      name: "module2",
+      library: { type: "var", name: "module2" },
+      filename: "remoteEntry2.js",
+      exposes: {
+        // expose each component you want
+        "./App": "./src/components/App",
       },
       shared: ["react", "react-dom"],
     }),
