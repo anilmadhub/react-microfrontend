@@ -6,7 +6,7 @@ export const App = () => {
     <>
       <div>Shell</div>
       <Suspense fallback="loading module... ">
-        <Module1 name="Roster" />
+        <Module1 name="Module_name" />
       </Suspense>
     </>
   );

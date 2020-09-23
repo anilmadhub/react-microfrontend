@@ -1,5 +1,5 @@
 import React from "react";
 
-export default ({ name = "LMS" }) => {
-  return <div>custom {name} React module</div>;
+export default ({ name = "<module_name>" }) => {
+  return <div>custom {name} React micro app</div>;
 };
