@@ -1,0 +1,18 @@
+{
+  "name": "@wrm/mfe",
+  "version": "1.0.0",
+  "description": "A sample monorepo for your projects",
+  "scripts": {
+    "build": "pnpm recursive run build",
+    "start:all": "pnpm recursive run start",
+    "start:shell": "pnpm recursive run start --filter @wrm/shell",
+    "start:module1": "pnpm recursive run start --filter @wrm/module1"
+  },
+  "keywords": [
+    "react",
+    "microfrontend",
+    "webpack"
+  ],
+  "author": "Avinash Nilmadhub",
+  "license": "MIT"
+}
