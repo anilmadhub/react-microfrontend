@@ -1,5 +1,5 @@
 import React from "react";
 
-export default () => {
-  return <div>React module</div>;
+export default ({ name = "LMS" }) => {
+  return <div>custom {name} React module</div>;
 };
