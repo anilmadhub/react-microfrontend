@@ -5,7 +5,7 @@
   "scripts": {
     "build": "pnpm recursive run build",
     "start:all": "pnpm recursive run start",
-    "start:shell": "pnpm recursive run start --filter @wrm/shell",
+    "start:shell": "pnpm recursive run start_shell",
     "start:module1": "pnpm recursive run start --filter @wrm/module1",
     "start:module2": "pnpm recursive run start --filter @wrm/module2"
   },
