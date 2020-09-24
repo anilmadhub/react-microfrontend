@@ -25,7 +25,7 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "module2",
       library: { type: "var", name: "module2" },
-      filename: "remoteEntry2.js",
+      filename: "remoteEntry.js",
       exposes: {
         // expose each component you want
         "./App": "./src/components/App",
