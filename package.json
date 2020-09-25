@@ -16,5 +16,8 @@
     "webpack"
   ],
   "author": "Avinash Nilmadhub",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "pnpm": "^5.7.0"
+  }
 }

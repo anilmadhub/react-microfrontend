@@ -1,6 +1,9 @@
 importers:
   .:
-    specifiers: {}
+    devDependencies:
+      pnpm: 5.7.0
+    specifiers:
+      pnpm: ^5.7.0
   modules/module1:
     dependencies:
       react: 16.13.1
@@ -4203,6 +4206,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-HRDzbaKjC+AOWVXxAU/x54COGeIv9eb+6CkDSQoNTt4XyWoIJvuPsXizxu/Fr23EiekbtZwmh1IcIG/l/a10GQ==
+  /pnpm/5.7.0:
+    dev: true
+    engines:
+      node: '>=10.13'
+    hasBin: true
+    resolution:
+      integrity: sha512-5+ZKJUKhh6indenG8egpELjgAEQKO6fx5LHlepDr3zymkX6EupySjPh/E/20ue920bUbMdvC0Hi2S71S45IJ7A==
   /portfinder/1.0.28:
     dependencies:
       async: 2.6.3
