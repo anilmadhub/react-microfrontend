@@ -1,5 +1,9 @@
 import React from "react";
 
 export default ({ name = "<module_name>" }) => {
-  return <div>[Second] custom {name} React micro app</div>;
+  return (
+    <div>
+      [Module 2] <b>remote</b> {name} React micro app. deployed
+    </div>
+  );
 };
