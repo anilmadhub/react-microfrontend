@@ -5,7 +5,7 @@ const Module2 = lazy(() => import("module2/App"));
 export const App = () => {
   return (
     <>
-      <div>Shell</div>
+      <div style={{ background: "green" }}>Shell</div>
       <Suspense fallback="loading module... ">
         <Module1 name="Module_name" />
         <Module2 name="Module_name" />
