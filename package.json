@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A sample monorepo for your projects",
   "scripts": {
+    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "pnpm recursive run build",
     "start:all": "pnpm recursive run start",
     "start:shell": "pnpm recursive run start_shell",
