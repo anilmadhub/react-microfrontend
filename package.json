@@ -5,6 +5,7 @@
   "scripts": {
     "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skiping pnpm install",
     "build": "pnpm recursive run build",
+    "build:shell": "pnpm recursive run build --filter @wrm/shell",
     "start:all": "pnpm recursive run start",
     "start:shell": "pnpm recursive run start_shell",
     "start:module1": "pnpm recursive run start --filter @wrm/module1",
