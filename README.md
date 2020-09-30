@@ -5,9 +5,10 @@ Run multiple micro react apps (modules) from one container app (shell)
 ### TODO
 
 - [ ] Document how to use this setup
-- [ ] Add support for other frameworks beside React (e.g Vue, Svelte, Angular)
+- [ ] ~~Add support for other frameworks beside React (e.g Vue, Svelte, Angular)~~. Webpack module federation does not currently support multi frameworks
 - [ ] Add support for netlify deployment
 - [ ] Add state management in the shell monorepo
+- [ ] Add a shared library structure
 - [ ] Add Offline PWA
 - [x] Add monorepo (either yarn or pnpm)
 - [x] Add single install script for everything
