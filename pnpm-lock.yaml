@@ -66,6 +66,7 @@ importers:
       react-dom: 16.13.1_react@16.13.1
     devDependencies:
       '@babel/core': 7.11.6
+      '@babel/plugin-transform-runtime': 7.11.5_@babel+core@7.11.6
       '@babel/preset-env': 7.11.5_@babel+core@7.11.6
       '@babel/preset-react': 7.10.4_@babel+core@7.11.6
       babel-loader: 8.1.0_e31e7b9ba690ea3e58c86497bc41a1d1
@@ -77,6 +78,7 @@ importers:
       webpack-dev-server: 3.11.0_f6984eb6f71a682649d680640d8aff2d
     specifiers:
       '@babel/core': ^7.11.6
+      '@babel/plugin-transform-runtime': ^7.11.5
       '@babel/preset-env': ^7.11.5
       '@babel/preset-react': ^7.10.4
       babel-loader: ^8.1.0
@@ -910,6 +912,18 @@ packages:
       '@babel/core': ^7.0.0-0
     resolution:
       integrity: sha512-hGsw1O6Rew1fkFbDImZIEqA8GoidwTAilwCyWqLBM9f+e/u/sQMQu7uX6dyokfOayRuuVfKOW4O7HvaBWM+JlQ==
+  /@babel/plugin-transform-runtime/7.11.5_@babel+core@7.11.6:
+    dependencies:
+      '@babel/core': 7.11.6
+      '@babel/helper-module-imports': 7.10.4
+      '@babel/helper-plugin-utils': 7.10.4
+      resolve: 1.17.0
+      semver: 5.7.1
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha512-9aIoee+EhjySZ6vY5hnLjigHzunBlscx9ANKutkeWTJTx6m5Rbq6Ic01tLvO54lSusR+BxV7u4UDdCmXv5aagg==
   /@babel/plugin-transform-shorthand-properties/7.10.4_@babel+core@7.11.6:
     dependencies:
       '@babel/core': 7.11.6
