@@ -1,15 +1,22 @@
 import React, { lazy, Suspense } from "react";
 const Module1 = lazy(() => import("module1/App"));
 const Module2 = lazy(() => import("module2/App"));
+import "../assets/style.css";
 
 export const App = () => {
   return (
     <>
-      <div style={{ background: "green" }}>Shell</div>
-      <Suspense fallback="loading module... ">
-        <Module1 name="Module_name" />
-        <Module2 name="Module_name" />
-      </Suspense>
+      <div className="space">
+        <h1>React micro frontend</h1>
+        <h3>One shell, Two modules</h3>
+      </div>
+      <div className="greenBackground space">
+        <strong className="space">Shell</strong>
+        <Suspense fallback="loading module... ">
+          <Module1 name="Module_name" />
+          <Module2 name="Module_name" />
+        </Suspense>
+      </div>
     </>
   );
 };
