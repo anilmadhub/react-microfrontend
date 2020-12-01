@@ -1,6 +1,5 @@
 import React, { lazy, Suspense } from "react";
 const Module1 = lazy(() => import("module1/App"));
-const Module2 = lazy(() => import("module2/App"));
 import "../assets/style.css";
 
 export const App = () => {
@@ -14,7 +13,6 @@ export const App = () => {
         <strong className="space">Shell</strong>
         <Suspense fallback="loading module... ">
           <Module1 name="Module_name" />
-          <Module2 name="Module_name" />
         </Suspense>
       </div>
     </>
